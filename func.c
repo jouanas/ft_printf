@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
-void	ft_putchar(char c, int fd)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_putstr(char *s, int fd)
+void	ft_putstr(char *s)
 {
 	int	i;
 

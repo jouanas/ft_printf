@@ -17,10 +17,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stdarg.h>
-#include "libft.h"
 
-
-
-
+void	ft_putchar(char c);
+void	ft_putstr(char *s);
+void	ft_putnbr(int n);
 
 #endif
