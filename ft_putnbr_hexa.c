@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_putnbr_hexa.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sjouan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 21:00:20 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/20 21:00:23 by sjouan           ###   ########.fr       */
+/*   Created: 2024/11/23 11:59:32 by sjouan            #+#    #+#             */
+/*   Updated: 2024/11/23 12:01:34 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#include "printf.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdarg.h>
+void ft_putnbr_hexa(int n)
+{
 
-void	ft_putchar(char c);
-void	ft_putstr(char *s);
-void	ft_putnbr(int n);
-
-#endif
+}
