@@ -6,7 +6,7 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 10:59:34 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/23 11:53:43 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/23 12:46:56 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main()
 {
 	char *p;
 
-	p = "salma jouana";
+	p = NULL;
 	ft_print_pointer_for(p);
 	printf("\n%p", p);
 }
