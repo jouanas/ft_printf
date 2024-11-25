@@ -6,13 +6,13 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 08:28:56 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/23 14:28:24 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/25 15:59:15 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-void ft_print_pointer_for(void *p)
+void    ft_print_pointer_for(void *p)
 {
     size_t  pointer_value;
     char    buffer[16];
@@ -29,7 +29,7 @@ void ft_print_pointer_for(void *p)
     hex_digits = "0123456789abcdef";
     while (pointer_value > 0)
     {
-        buffer[i] = hex_digits[pointer_value%16];
+        buffer[i] = hex_digits[pointer_value % 16];
         pointer_value /= 16;
         i++;
     }
@@ -37,4 +37,4 @@ void ft_print_pointer_for(void *p)
     while (j >= 0 && j--)
         write(1, &buffer[j], 1);
 
-}
+} 
