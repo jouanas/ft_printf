@@ -12,14 +12,27 @@
 
 #include "printf.h"
 
-void	ft_putstr(char *s)
+void	ft_putstr(char *s, int *count)
 {
 	int	i;
 
 	i = 0;
-	while (s && s[i])
+	if (!s)
 	{
-		write(1, &s[i], 1);
+		write(1, "(null)", 6);
+		*count += 6;
+		return;
+	}
+	while (s[i])
+	{
+		ft_putchar(s[i], count);
 		i++;
 	}
 }
+
+// int main()
+// {
+// 	int count = 0;
+// 	ft_putstr(NULL, &count);
+// 	printf("\n%d\n", count);
+// }

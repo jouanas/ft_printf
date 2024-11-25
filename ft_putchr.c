@@ -12,7 +12,8 @@
 
 #include "printf.h"
 
-void	ft_putchar(char c)
+void	ft_putchar(char c, int *count)
 {
 	write(1, &c, 1);
+	(*count)++;
 }

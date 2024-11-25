@@ -12,7 +12,7 @@
 
 #include "printf.h"
 
-int ft_putnbr_hexa(int n, char sp, int *count)
+void    ft_putnbr_hexa(unsigned int n, char sp, int *count)
 {
     char    *base;
     int     i;
@@ -21,7 +21,7 @@ int ft_putnbr_hexa(int n, char sp, int *count)
     
     j = 0;
     i = 0;
-    if (sp == x)
+    if (sp == 'x')
         base = "0123456789abcdef";
     else
         base  = "0123456789ABCDEF";
@@ -32,9 +32,5 @@ int ft_putnbr_hexa(int n, char sp, int *count)
         i++;
     }
     while (i >= 0 )
-    {
-         write(1, &buffer[i--], 1);
-         count++;
-    }
-    return (count);
+         ft_putchar(buffer[i--], count);
 }

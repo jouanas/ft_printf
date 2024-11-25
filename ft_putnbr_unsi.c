@@ -12,19 +12,13 @@
 
 #include "printf.h"
 
-void	ft_putnbr_unsi(unsigned int n)
+void	ft_putnbr_unsi(unsigned int n, int * count)
 {
-	char	c;
-
 	if (n < 10)
-	{
-		c = n + 48;
-		write(1, &c, 1);
-	}
+		ft_putchar(n + 48, count);
 	else
 	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		ft_putnbr_unsi(n / 10, count);
+		ft_putchar((n % 10) + 48, count);
 	}
 }
-

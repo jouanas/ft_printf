@@ -18,11 +18,11 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-void    ft_putnbr_hexa(int n);
-void	ft_putchar(char c);
-void	ft_putstr(char *s);
-void	ft_putnbr(int n);
-void    ft_print_pointer_for(void *p);
-void	ft_putnbr_unsi(unsigned int n);
+void    ft_putnbr_hexa(unsigned int n, char sp, int *count);
+void	ft_putchar(char c, int *count);
+void	ft_putstr(char *s, int *count);
+void	ft_putnbr(int n, int *count);
+void    ft_print_pointer_for(void *p, int *count);
+void	ft_putnbr_unsi(unsigned int n, int *count);
 
 #endif

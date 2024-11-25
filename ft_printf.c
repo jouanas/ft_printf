@@ -12,6 +12,9 @@
 
 #include "printf.h"
 
+// if (c == '%')
+// 	ft_putchar('%');
+
 int	ft_printf(const char *str, ...)
 {
 	
