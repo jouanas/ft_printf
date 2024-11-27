@@ -11,21 +11,16 @@
 /* ************************************************************************** */
 
 #include "printf.h"
-
+void ft(int *count)
+{
+   count++;
+   printf("%d", *count);
+}
 int main()
 {
-	// char *p;
 
-	// p = NULL;
-	// ft_print_pointer_for(p);
-	// printf("\n%p", p);
-	char    *base;
-	base ="ggggg";
-    int     i;
-     base[1] = 'a';
-    //base[17] = "0123456789abcdef";
-	
-  
-  printf("%s", base);
+int count = 12;
+ft(&count);
+printf("\n%d", count);
    
 }

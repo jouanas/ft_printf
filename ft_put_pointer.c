@@ -12,17 +12,17 @@
 
 #include "printf.h"
 
-void    ft_print_pointer_for(void *p)
+void    ft_print_pointer_for(void *p, int *count)
 {
     size_t  pointer_value;
     char    buffer[16];
     char    *hex_digits;
     int     (i), (j);
 
-    write(1, "0x", 2);
+    putstr("0x", count);
     if (p == 0)
     {
-        write(1, "0", 1);
+        putchr('0', count);
     }
     i = 0;
     pointer_value = (size_t)p;
@@ -35,6 +35,6 @@ void    ft_print_pointer_for(void *p)
     }
     j = i;
     while (j >= 0 && j--)
-        write(1, &buffer[j], 1);
+       putchr(&buffer[j], count);
 
 } 

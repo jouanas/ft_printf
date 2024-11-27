@@ -11,11 +11,23 @@
 /* ************************************************************************** */
 
 #include "printf.h"
-
-// if (c == '%')
-// 	ft_putchar('%');
-
+//static mini_printf()
 int	ft_printf(const char *str, ...)
 {
+	int count;
+	va_list args;
+
+	count = 0;
+	va_start(args, str); 
+	while (*str)
+	{
+		if (*str == '%') 
+		{
+			mini_printf()
+		}
+		
+	}
 	
+
+
 }
