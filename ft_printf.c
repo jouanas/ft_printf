@@ -6,13 +6,13 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 21:23:30 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/29 16:54:41 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/29 22:17:01 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-static void mini_printf(const char *str, int *count, va_list args)
+static void	mini_printf(const char *str, int *count, va_list args)
 {
 	if (*str == 'd')
 		ft_putnbr(va_arg(args, int), count);
@@ -29,20 +29,19 @@ static void mini_printf(const char *str, int *count, va_list args)
 	else if (*str == '%')
 		ft_putchar('%', count);
 }
+
 int	ft_printf(const char *str, ...)
 {
-	int count;
-	va_list args;
+	int		count;
+	va_list	args;
 
 	count = 0;
-	va_start(args, str); 
+	va_start(args, str);
 	while (*str)
 	{
-		if(*str == '%' && *(str + 1) == '\0')
-		{
+		if (*str == '%' && *(str + 1) == '\0')
 			return (-1);
-		}
-		 if (*str == '%') 
+		if (*str == '%')
 		{
 			str++;
 			mini_printf(str, &count, args);

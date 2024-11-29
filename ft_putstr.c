@@ -21,7 +21,7 @@ void	ft_putstr(char *s, int *count)
 	{
 		write(1, "(null)", 6);
 		*count += 6;
-		return;
+		return ;
 	}
 	while (s[i])
 	{
