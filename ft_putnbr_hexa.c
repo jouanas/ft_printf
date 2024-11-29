@@ -6,7 +6,7 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 11:59:32 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/25 17:20:22 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/29 14:50:12 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ void    ft_putnbr_hexa(unsigned int n, char sp, int *count)
     char    *base;
     int     i;
     char    buffer[16];
-    int     j;
     
-    j = 0;
     i = 0;
     if (sp == 'x')
         base = "0123456789abcdef";

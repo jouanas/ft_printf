@@ -6,7 +6,7 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 08:28:56 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/25 15:59:15 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/29 16:49:11 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,12 @@ void    ft_print_pointer_for(void *p, int *count)
     char    *hex_digits;
     int     (i), (j);
 
-    putstr("0x", count);
     if (p == 0)
     {
-        putchr('0', count);
+        ft_putstr("(nil)", count);
+        return ;
     }
+    ft_putstr("0x", count);
     i = 0;
     pointer_value = (size_t)p;
     hex_digits = "0123456789abcdef";
@@ -35,6 +36,6 @@ void    ft_print_pointer_for(void *p, int *count)
     }
     j = i;
     while (j >= 0 && j--)
-       putchr(&buffer[j], count);
+       ft_putchar(buffer[j], count);
 
 } 
