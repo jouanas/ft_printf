@@ -6,11 +6,11 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 21:23:30 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/29 22:17:01 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/30 18:09:22 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static void	mini_printf(const char *str, int *count, va_list args)
 {
@@ -54,9 +54,9 @@ int	ft_printf(const char *str, ...)
 }
 // int main()
 // {
-// 	int h = 45;
-// 	char *s = "jouana";
-//  int l0 = ft_printf("\n%d, %s salma\n", h, s);
-// 	int l = printf("\n%d, %s salma\n", h, s);
+// 	int h = -12;
+// 	//char *s = "jouana";
+// 	int l = printf("test  %u  %X   %p\n", h, h, &h);
+//  	int l0 = ft_printf("test  %u  %X   %p\n", h, h, &h);
 // 	printf("\n%d, %d\n", l0, l);
 // }

@@ -6,11 +6,11 @@
 /*   By: sjouan <sjouan@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 22:57:02 by sjouan            #+#    #+#             */
-/*   Updated: 2024/11/29 14:46:50 by sjouan           ###   ########.fr       */
+/*   Updated: 2024/11/30 18:10:53 by sjouan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 void	ft_putnbr(int n, int *count)
 {
