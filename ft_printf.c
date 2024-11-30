@@ -14,7 +14,9 @@
 
 static void	mini_printf(const char *str, int *count, va_list args)
 {
-	if (*str == 'd')
+	if (*str == 'c')
+		ft_putchar(va_arg(args, int), count);
+	else if (*str == 'd')
 		ft_putnbr(va_arg(args, int), count);
 	else if (*str == 's')
 		ft_putstr(va_arg(args, char *), count);
@@ -52,11 +54,3 @@ int	ft_printf(const char *str, ...)
 	}
 	return (count);
 }
-// int main()
-// {
-// 	int h = -12;
-// 	//char *s = "jouana";
-// 	int l = printf("test  %u  %X   %p\n", h, h, &h);
-//  	int l0 = ft_printf("test  %u  %X   %p\n", h, h, &h);
-// 	printf("\n%d, %d\n", l0, l);
-// }
